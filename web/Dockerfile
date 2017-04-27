@@ -5,8 +5,8 @@ RUN curl -SL https://raw.githubusercontent.com/enamba/dotnet-core/v1/Dockerfiles
     && chmod 700 script.sh \
     && ./script.sh \
     && rm script.sh
-WORKDIR /opt/dotnet-core/
+WORKDIR /opt/dotnet-core/web/
 ENV ASPNETCORE_URLS http://*:5000
 EXPOSE 5000:5000
 ENTRYPOINT ["dotnet", "api.dll"]
-COPY . /opt/dotnet-core
+COPY . /opt/dotnet-core/web/
