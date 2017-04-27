@@ -1,10 +1,10 @@
 FROM enamba/dotnet_core:latest
 ENV ASPNETCORE_URLS http://*:5000
 WORKDIR /tmp/
-RUN curl -SL https://raw.githubusercontent.com/Microsoft/MIEngine/getclrdbg-release/scripts/GetClrDbg.sh --output GetClrDbg.sh \
-    && chmod 700 GetClrDbg.sh \
-    && ./GetClrDbg.sh $CLRDBG_VERSION \
-    && rm GetClrDbg.sh
+RUN curl -SL https://raw.githubusercontent.com/enamba/dotnet-core/v1/Dockerfiles/script.sh --output script.sh \
+    && chmod 700 script.sh \
+    && ./script.sh \
+    && rm script.sh
 WORKDIR /opt/dotnet-core/
 ENV ASPNETCORE_URLS http://*:5000
 EXPOSE 5000
