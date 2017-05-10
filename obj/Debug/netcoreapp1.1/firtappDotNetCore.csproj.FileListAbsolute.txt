@@ -1,8 +1,0 @@
-/Users/enamba/Projects/firtappDotNetCore/bin/Debug/netcoreapp1.1/firtappDotNetCore.deps.json
-/Users/enamba/Projects/firtappDotNetCore/bin/Debug/netcoreapp1.1/firtappDotNetCore.runtimeconfig.json
-/Users/enamba/Projects/firtappDotNetCore/bin/Debug/netcoreapp1.1/firtappDotNetCore.runtimeconfig.dev.json
-/Users/enamba/Projects/firtappDotNetCore/bin/Debug/netcoreapp1.1/firtappDotNetCore.dll
-/Users/enamba/Projects/firtappDotNetCore/bin/Debug/netcoreapp1.1/firtappDotNetCore.pdb
-/Users/enamba/Projects/firtappDotNetCore/obj/Debug/netcoreapp1.1/firtappDotNetCore.AssemblyInfo.cs
-/Users/enamba/Projects/firtappDotNetCore/obj/Debug/netcoreapp1.1/firtappDotNetCore.dll
-/Users/enamba/Projects/firtappDotNetCore/obj/Debug/netcoreapp1.1/firtappDotNetCore.pdb
