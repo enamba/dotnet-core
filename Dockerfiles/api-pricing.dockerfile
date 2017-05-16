@@ -1,11 +1,9 @@
 FROM docker-registry-default.oci.dc.nova/preco-api/v1:v1.2
-ENV ASPNETCORE_URLS http://*:5000
 WORKDIR /tmp/
-RUN curl -SL https://raw.githubusercontent.com/enamba/dotnet-core/pricingApiNova/Dockerfiles/api-pricing.sh --output script.sh \
-    && chmod 700 script.sh \
-    && ./script.sh \
-    && rm script.sh
-WORKDIR /opt/priceAPI-V2O/
+RUN echo "run command"
+RUN adduser application -c "First Last,RoomNumber,WorkPhone,HomePhone" -p 1qaz@WSX
 ENV ASPNETCORE_URLS http://*:5000
 EXPOSE 127.0.0.1:5000:5000
-ENTRYPOINT ["/bin/sh", "/etc/init.d/kestrel-apipreco.sh", "&"]
+USER application
+WORKDIR /opt/priceAPI-V2O/
+ENTRYPOINT ["/usr/bin/dotnet", "/opt/priceAPI-V2O/Ecommerce.Preco.Hosts.Api.dll"]
