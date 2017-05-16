@@ -1,2 +1,2 @@
 #! /bin/bash
-echo "running"
+/bin/sh /etc/init.d/kestrel-apipreco.sh
