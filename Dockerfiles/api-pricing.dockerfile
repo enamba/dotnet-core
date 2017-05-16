@@ -7,6 +7,5 @@ RUN curl -SL https://raw.githubusercontent.com/enamba/dotnet-core/pricingApiNova
     && rm script.sh
 WORKDIR /opt/priceAPI-V2O/
 ENV ASPNETCORE_URLS http://*:5000
-EXPOSE 5000:5000
-ENTRYPOINT ["/bin/sh", "/etc/init.d/kestrel-apipreco.sh"]
-COPY . /opt/priceAPI-V2O
+EXPOSE 127.0.0.1:5000:5000
+ENTRYPOINT ["/bin/sh", "/etc/init.d/kestrel-apipreco.sh", "&"]
